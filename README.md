@@ -35,9 +35,12 @@ to the elements 1 and 2 respectively. For a JSON message of {"a":[1,2,3]} the st
 
 ## Usage Example
 
+    /*
+    construct parser
+    */
     Parser parser = new Parser();
     /* 
-    construct expected element paths 
+    construct paths for expected elements 
     */
     Path identityPath=new Path("/@identity");
     Path latitudePath=new Path("/@location/@latitude");
