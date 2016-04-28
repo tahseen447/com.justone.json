@@ -33,14 +33,14 @@ to the elements 1 and 2 respectively. For a JSON message of {"a":[1,2,3]} the st
 "/@a/#0" and "/@a/#2" represent the paths for elements 1 and 3 respectively. 
 
 
-## Example
+## Usage Example
 
-  Parser parser = new Parser();
-  Path identityPath=new Path("/@identity");
-  Path latitudePath=new Path("/@location/@latitude");
-  Path longitudePath=new Path("/@location/@longitude");
-  parser.parse("{\"identity\":12345,\"location\":{\"latitude\":51.5047650,\"longitude\":-2.4841220}}");
-  Element identityElement=parser.getElement(identityPath);
-  Element latitudeElement=parser.getElement(latitudePath);
-  Element longitudeElement=parser.getElement(longitudePath);
-  System.out.println("id="+identityElement.toString()+" loc="+latitudeElement.toString()+","+longitudeElement.toString());
+    Parser parser = new Parser();
+    Path identityPath=new Path("/@identity");
+    Path latitudePath=new Path("/@location/@latitude");
+    Path longitudePath=new Path("/@location/@longitude");
+    parser.parse("{\"identity\":12345,\"location\":{\"latitude\":51.5047650,\"longitude\":-2.4841220}}");
+    Element identityElement=parser.getElement(identityPath);
+    Element latitudeElement=parser.getElement(latitudePath);
+    Element longitudeElement=parser.getElement(longitudePath);
+    System.out.println("id="+identityElement.toString()+" loc="+latitudeElement.toString()+","+longitudeElement.toString());
