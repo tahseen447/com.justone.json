@@ -59,3 +59,12 @@ to the elements 1 and 2 respectively. For a JSON message of {"a":[1,2,3]} the st
     output elements as strings
     */
     System.out.println("id="+identityElement.toString()+" loc="+latitudeElement.toString()+","+longitudeElement.toString());
+    
+## Dependencies
+
+None
+
+## Author
+
+Duncan Pauly
+
