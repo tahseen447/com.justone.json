@@ -15,8 +15,8 @@ A JSON message is parsed into a hierarchy of elements where each element is
 a scalar, array or object element. Use the parse() method to parse one or more messages.
 
 Use getRootElement() to return the root element and use getElement() to return an element found 
-at a specified path from the parsed message. The hierarchy 
-can then be navigated thereafter using element methods.
+at a specified path from the parsed message. The hierarchy can also be navigated using element methods to 
+navigate to child elements.
 
 ## Paths
 
