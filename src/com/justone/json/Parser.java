@@ -552,7 +552,7 @@ public class Parser {
                   break;
         case '}': chr=next();//consume close bracket character
                   break;
-        default : throw new RuntimeException("Invalid syntax : "+context());//gone pete tong
+        default : throw new RuntimeException("Invalid syntax : "+context(), "chr="+chr, "iIndex:"+iIndex, "iMessage:"+iMessage);//gone pete tong
       }//switch on next character
                     
     }//until closing bracket found 
